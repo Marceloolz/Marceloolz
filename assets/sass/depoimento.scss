@@ -100,6 +100,33 @@
     animation: animaTerminal 1.5s infinite;
 }
 
+@media screen and (max-width: 960px){
+    .Page_Depoimento{
+        .Page_Depoimento_Container{
+            grid-template-columns: 1fr;
+            .Depoimento_Container_Skills{
+                .Container_Skills_Conteudo{
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    .Page_Depoimento{
+        .Page_Depoimento_Container{
+            .Depoimento_Container_Skills{
+                .Container_Skills_Conteudo{
+                    grid-template-columns: 1fr;
+                    grid-gap: 40px;
+                }
+            }
+        }
+    }
+}
+
 @keyframes animaTerminal{
     0%{
         opacity: 0;

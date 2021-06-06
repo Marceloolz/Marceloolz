@@ -97,6 +97,20 @@
     }
 }
 
+@media screen and (max-width: 840px){
+    .PageHeader{
+        .PageHeader_Container{
+            flex-direction: column;
+            align-items: center;
+            .PageHeader_Container_Textos{
+                margin-left: inherit;
+                margin-top: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+
 @keyframes animaBgFoto{
     0%{
         top: -16px;
