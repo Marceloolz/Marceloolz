@@ -7,30 +7,4 @@ $Color1: #FFB300;
     transition: 0.2s ease-in;
 }
 
-%ScrollPersonalizado{
-    ::-webkit-scrollbar {
-        -webkit-appearance:none
-    }
-    ::-webkit-scrollbar:vertical {
-        width:10px;
-    }
-    ::-webkit-scrollbar:horizontal {
-        height: 12px;
-    }
-    ::-webkit-scrollbar-thumb {
-        background-color: #2d2d2d45;
-        border-radius:10px;
-        border:2px solid $fff;
-    }
-    ::-webkit-scrollbar-track {
-        border-radius:10px;
-        background-color:$fff;
-    }
-}
-
-@extend %ScrollPersonalizado;
-@extend %Hover;
-
-a{
-    @extend %Hover;
-}
+// // @extend %Hover;

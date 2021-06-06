@@ -31,7 +31,13 @@
 </head>
 
 <body>
-    <!-- <div class="preloader"></div> -->
+    <div class="preloader">
+        <div class="preloader_Dots">
+            <div class="preloader_Dots_Item"></div>
+            <div class="preloader_Dots_Item"></div>
+            <div class="preloader_Dots_Item"></div>
+        </div>
+    </div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
