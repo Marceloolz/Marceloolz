@@ -80,6 +80,7 @@
                     display: none;
                     align-items: center;
                     justify-content: center;
+                    animation: 1s ChegouCodepen 1;
                     .Item_ModalCode_CloseBTN{
                         cursor: pointer;
                         color: #fff;
@@ -139,5 +140,17 @@
     }
     100%{
         transform: scale(5.0);    
+    }
+}
+
+@keyframes ChegouCodepen{
+    0%{
+        left: 4000px;    
+    }
+    75%{
+        left: -200px;
+    }
+    100%{
+        left: 0px;    
     }
 }
