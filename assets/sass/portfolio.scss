@@ -24,10 +24,11 @@
             margin: 0 auto;
         }
         .Portfolio_Container_Galeria{
+            margin-top: 64px;
+            position: relative;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 16px;
-            margin-top: 64px;
+            grid-gap: 24px;
             .Container_Galeria_Item{
                 width: 100%;
                 position: relative;
@@ -47,26 +48,64 @@
                     width: 100%;
                     overflow: hidden;
                     border-radius: 8px;
+                    height: 100%;
                 }
-                .Galeria_Item_Button{
+                button{
                     position: absolute;
                     bottom: 16px;
                     right: 10px;
-                    button{
-                        background-color: #ffd200;
-                        border: none;
-                        padding: 12px 16px;
-                        border-radius: 4px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        font-size: 10px;
+                    background-color: #ffd200;
+                    border: none;
+                    padding: 12px 16px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    cursor: pointer;
+                    color: #392b68;
+                    @extend %Hover;
+                    &:hover{
+                        background-color: #392b68;
+                        color: #fff;
+                    }
+                }
+                .Galeria_Item_ModalCode{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    min-height: 100vh;
+                    background-color: #0a0215f7;
+                    z-index: 99999999;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    .Item_ModalCode_CloseBTN{
                         cursor: pointer;
-                        color: #392b68;
-                        @extend %Hover;
+                        color: #fff;
+                        font-size: 32px;
+                        position: fixed;
+                        top: 16px;
+                        right: 16px;
+                        -webkit-transition: 0.1s ease-in;
+                        -moz-transition: 0.1s ease-in;
+                        -o-transition: 0.1s ease-in;
+                        transition: 0.1s ease-in;
+                        z-index: 999999999;
                         &:hover{
-                            background-color: #392b68;
-                            color: #fff;
+                            color: #ffd200;
                         }
+                    }              
+                    iframe{
+                        width: 90%;
+                        height: 90vh;
+                        z-index: 99999999;
+                    }
+                }
+                &.__CodePenActive{
+                    z-index: 999999999;
+                    .Galeria_Item_ModalCode{
+                        display: flex;
                     }
                 }
             }
