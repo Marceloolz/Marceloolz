@@ -237,6 +237,8 @@
     <script src="js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="lib/slick/slick.min.js"></script>
     <script src="js/app.js?v=1.0.0"></script>
+
+    <?php include 'modal-cookies.php'; ?>
 </body>
 
 </html>
