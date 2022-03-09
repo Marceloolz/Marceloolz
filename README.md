@@ -1,4 +1,6 @@
-### Olá!! 👋
+### Olá!! Este é o repositório do meu Portfólio, onde procuro contar um pouco sobre mim, sobre as tecnologias que eu estou usando e os projetos que me envolvem. Fique a vontade para entrar em contato em qualquer canal divulgado no Portfólio, obrigado!
+
+### Hi!! This is my Portfolio repository, where I try to tell a little about myself, the technologies I'm using and the projects that involve me. Feel free to get in touch on any channel published in the Portfolio, thank you!
 
 <!--
 **Marceloolz/Marceloolz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
