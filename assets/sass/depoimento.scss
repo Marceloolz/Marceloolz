@@ -1,140 +1,170 @@
-.Page_Depoimento{
-    display: flex;
-    justify-content: center;
-    margin: 64px 0px;
-    .Page_Depoimento_Container{
-        max-width: 90%;
-        width: 1200px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 40px;
-        .Depoimento_Container_Content{
-            @extend %Hover;
-            background-color: #241c3e;
-            padding: 32px 32px;
-            border-radius: 6px;
-            border: 4px solid #0000;
-            &:hover{
-                border: 4px solid $Amarelo;
-            }
-            .Container_Content_Titulo{
-                color: $Amarelo;
-                font-size: 40px;
-                line-height: 48px;
-                text-transform: uppercase;
-                font-weight: 800;
-                font-style: italic;
-            }
-            .Container_Content_TextoNormal{
-                color: $Branco;
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 100;
-                a{
-                    font-weight: 600;
-                    color: $Amarelo;
-                    text-decoration: none;
-                    border-bottom: 2px solid #c5b7f3;
-                    @extend %Hover;
-                    &:hover{
-                        border-color: $Amarelo;
-                    }
-                }
-            }
+.Page_Depoimento {
+  display: flex;
+  justify-content: center;
+  margin: 64px 0px;
+  .Page_Depoimento_Container {
+    max-width: 90%;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    .Depoimento_Container_Content {
+      @extend %Hover;
+      background-color: #241c3e;
+      padding: 32px 32px;
+      border-radius: 6px;
+      border: 4px solid #0000;
+      &:hover {
+        border: 4px solid $Amarelo;
+      }
+      .Container_Content_Titulo {
+        color: $Amarelo;
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-style: italic;
+      }
+      .Container_Content_TextoNormal {
+        color: $Branco;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 100;
+        a {
+          font-weight: 600;
+          color: $Amarelo;
+          text-decoration: none;
+          border-bottom: 2px solid #c5b7f3;
+          @extend %Hover;
+          &:hover {
+            border-color: $Amarelo;
+          }
         }
-        .Depoimento_Container_Skills{
+      }
+    }
+    .Depoimento_Container_Skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .Container_Skills_Titulo {
+        color: $Amarelo;
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-style: italic;
+      }
+      .Container_Skills_Subtítulo {
+        color: #fff;
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .Container_Skills_Conteudo {
+        margin-top: 24px;
+        .Skills_Conteudo_Item {
+          margin-bottom: 24px;
+          .Conteudo_Item_Label {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 800;
+            font-style: italic;
+          }
+          .Conteudo_Item_Barra {
+            height: 20px;
+            margin-top: 8px;
+            border-radius: 30px;
+            font-size: 10px;
+            font-weight: 900;
+            color: #000;
+            padding-right: 8px;
+            text-align: right;
             display: flex;
             flex-direction: column;
+            align-items: flex-end;
             justify-content: center;
-            .Container_Skills_Titulo{
-                color: $Amarelo;
-                font-size: 40px;
-                line-height: 48px;
-                text-transform: uppercase;
-                font-weight: 800;
-                font-style: italic;
+            position: relative;
+            overflow: hidden;
+            &:after {
+              content: " ";
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-image: url(../img/abstract-stripe-background-in-black-and-blue-with-wavy-lines-pattern-free-vector.jpg);
+              background-size: 100%;
+              background-repeat: repeat;
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              z-index: 1;
+              opacity: 0.02;
+              animation: 8s animaSkills infinite;
             }
-            .Container_Skills_Subtítulo{
-                color: #fff;
-                font-size: 18px;
-                line-height: 28px;
-            }
-            .Container_Skills_Conteudo{
-                margin-top: 24px;
-                .Skills_Conteudo_Item{
-                    margin-bottom: 24px;
-                    .Conteudo_Item_Label{
-                        color: #fff;
-                        font-size: 14px;
-                        font-weight: 800;
-                        font-style: italic;
-                    }   
-                    .Conteudo_Item_Barra{
-                        height: 20px;
-                        margin-top: 8px;
-                        border-radius: 30px;
-                        font-size: 10px;
-                        font-weight: 900;
-                        color: #000;
-                        padding-right: 8px;
-                        text-align: right;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-                        justify-content: center;
-                    }
-                    .Conteudo_Item_Obs{
-                        color: #c5b7f3;
-                        font-size: 10px;
-                        margin-top: 6px;
-                    }
-                }
-            }
+          }
+          .Conteudo_Item_Obs {
+            color: #c5b7f3;
+            font-size: 10px;
+            margin-top: 6px;
+          }
         }
+      }
     }
+  }
 }
 
-.IconeTerminal{
-    font-size: 16px;
-    color: #13bba4;
-    animation: animaTerminal 1.5s infinite;
+.IconeTerminal {
+  font-size: 16px;
+  color: #13bba4;
+  animation: animaTerminal 1.5s infinite;
 }
 
-@media screen and (max-width: 960px){
-    .Page_Depoimento{
-        .Page_Depoimento_Container{
-            grid-template-columns: 1fr;
-            .Depoimento_Container_Skills{
-                .Container_Skills_Conteudo{
-                    grid-template-columns: 1fr 1fr;
-                    grid-gap: 40px;
-                }
-            }
+@media screen and (max-width: 960px) {
+  .Page_Depoimento {
+    .Page_Depoimento_Container {
+      grid-template-columns: 1fr;
+      .Depoimento_Container_Skills {
+        .Container_Skills_Conteudo {
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 40px;
         }
+      }
     }
+  }
 }
 
-@media screen and (max-width: 640px){
-    .Page_Depoimento{
-        .Page_Depoimento_Container{
-            .Depoimento_Container_Skills{
-                .Container_Skills_Conteudo{
-                    grid-template-columns: 1fr;
-                    grid-gap: 40px;
-                }
-            }
+@media screen and (max-width: 640px) {
+  .Page_Depoimento {
+    .Page_Depoimento_Container {
+      .Depoimento_Container_Skills {
+        .Container_Skills_Conteudo {
+          grid-template-columns: 1fr;
+          grid-gap: 40px;
         }
+      }
     }
+  }
 }
 
-@keyframes animaTerminal{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+@keyframes animaTerminal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animaSkills {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
