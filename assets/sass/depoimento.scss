@@ -27,8 +27,8 @@
       }
       .Container_Content_TextoNormal {
         color: $Branco;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
         font-weight: 100;
         a {
           font-weight: 600;
@@ -36,6 +36,7 @@
           text-decoration: none;
           border-bottom: 2px solid #c5b7f3;
           @extend %Hover;
+          white-space: nowrap;
           &:hover {
             border-color: $Amarelo;
           }
@@ -56,8 +57,8 @@
       }
       .Container_Skills_Subtítulo {
         color: #fff;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
       }
       .Container_Skills_Conteudo {
         margin-top: 24px;
@@ -166,5 +167,44 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+body {
+  &.__Is-Day {
+    .Page_Depoimento {
+      .Page_Depoimento_Container {
+        .Depoimento_Container_Content {
+          background-color: #f7f7f7;
+          .Container_Content_Titulo {
+            color: #574398;
+          }
+          .Container_Content_TextoNormal {
+            color: #574398;
+            a {
+              color: #2b1e56;
+            }
+          }
+          &:hover {
+            border-color: #c5b7f3;
+          }
+        }
+        .Depoimento_Container_Skills {
+          .Container_Skills_Titulo {
+            color: #574398;
+          }
+          .Container_Skills_Subtítulo {
+            color: #574398;
+          }
+          .Container_Skills_Conteudo {
+            .Skills_Conteudo_Item {
+              .Conteudo_Item_Label {
+                color: #574398;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

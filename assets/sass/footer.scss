@@ -1,22 +1,28 @@
-.Page_Footer{
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px -10px 20px #00000026;
-    align-items: center;
-    padding: 16px 0px;
-    .Page_Footer_Container{
-        width: 1200px;
-        max-width: 90%;
-        text-align: center;
-        color: #fff;
-        font-size: 12px;
-    }
+.Page_Footer {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -10px 20px #00000026;
+  align-items: center;
+  padding: 16px 0px;
+  .Page_Footer_Container {
+    width: 1200px;
+    max-width: 90%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+  }
 }
 
-@media screen and (max-width: 840px){
-    .Page_Footer{
-        padding-bottom: 100px;
-    }
+@media screen and (max-width: 840px) {
+  .Page_Footer {
+    padding-bottom: 100px;
+  }
 }
 
-/* :) */
+body {
+  &.__Is-Day {
+    .Page_Footer {
+      background-color: #574398;
+    }
+  }
+}

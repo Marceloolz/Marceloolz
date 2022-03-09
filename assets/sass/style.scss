@@ -1,67 +1,73 @@
-@import 'variaveis.scss';
-@import 'components.scss';
-@import 'header.scss';
-@import 'redessociais.scss';
-@import 'depoimento.scss';
-@import 'portfolio.scss';
-@import 'agradecimentos.scss';
-@import 'footer.scss';
+@import "variaveis.scss";
+@import "components.scss";
+@import "header.scss";
+@import "redessociais.scss";
+@import "depoimento.scss";
+@import "portfolio.scss";
+@import "agradecimentos.scss";
+@import "footer.scss";
+@import "seletor-dia-e-noite.scss";
 
-body{
-    margin: inherit;
-    padding: inherit;
-    font-family: 'Nunito', sans-serif;
-    background-color: $Roxo2;
+body {
+  margin: inherit;
+  padding: inherit;
+  font-family: "Nunito", sans-serif;
+  background-color: $Roxo2;
 }
 
 .preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999999;
-    background-color: $Roxo2;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  background-color: $Roxo2;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .preloader_Dots {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    .preloader_Dots{
-        display: flex;
-        flex-direction: row;
-        animation: RotateDots 1s infinite;
-        .preloader_Dots_Item{
-            width: 32px;
-            height: 32px;
-            background-color: #b874ef;
-            border-radius: 100px;
-            margin: 16px;
-            animation: DotsColor 2s infinite;
-        }
+    flex-direction: row;
+    animation: RotateDots 1s infinite;
+    .preloader_Dots_Item {
+      width: 32px;
+      height: 32px;
+      background-color: #b874ef;
+      border-radius: 100px;
+      margin: 16px;
+      animation: DotsColor 2s infinite;
     }
+  }
 }
 
-
-@keyframes DotsColor{
-    0%{
-        opacity: 0.1;
-    }
-    50%{
-        opacity: 1.0;
-        background-color: #b874ef;
-    }
-    100%{
-        opacity: 0.1;
-    }
+@keyframes DotsColor {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+    background-color: #b874ef;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
-@keyframes RotateDots{
-    0%{
-        transform: rotate(0.0);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+@keyframes RotateDots {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  &.__Is-Day {
+    background-color: $Branco;
+  }
 }

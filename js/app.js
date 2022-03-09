@@ -13,3 +13,7 @@ $(window).on('load', function() {
     $('.Container_Galeria_Item').removeClass( "__CodePenActive");
     event.stopPropagation();
   });
+
+  $('.SeletorDayNight').click(function(){
+    $('body').toggleClass( '__Is-Day');
+  });

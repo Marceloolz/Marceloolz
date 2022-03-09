@@ -1,39 +1,54 @@
-.Page_RedesSociais{
-    padding: 8px 8px 8px 16px;
-    position: fixed;
-    top: 16px;
-    right: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 8px;
-    background-color: #433a65;
-    border-radius: 4px 0 0 4px;
-    z-index: 9999999;
-    a{
-        font-size: 32px;
-        color: #c5b7f3;
-        @extend %Hover;
-        &:hover{
-            color: $Branco;
-        }
+.Page_RedesSociais {
+  padding: 8px 8px 8px 16px;
+  position: fixed;
+  top: 16px;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+  background-color: #433a65;
+  border-radius: 4px 0 0 4px;
+  z-index: 9999999;
+  a {
+    font-size: 32px;
+    color: #c5b7f3;
+    @extend %Hover;
+    &:hover {
+      color: $Branco;
     }
+  }
 }
 
-@media screen and (max-width: 840px){
-    .Page_RedesSociais{
-        top: inherit;
-        bottom: 0;
-        left: 0;
-        right: inherit;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 8px 0px 8px 16px;
-        overflow: scroll;
-        z-index: 9999999;
-        a{
-            margin-right: 16px;
-            font-size: 48px;
-        }
+@media screen and (max-width: 840px) {
+  .Page_RedesSociais {
+    top: inherit;
+    bottom: 0;
+    left: 0;
+    right: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0px 8px 16px;
+    overflow: scroll;
+    z-index: 9999999;
+    a {
+      margin-right: 16px;
+      font-size: 48px;
     }
+  }
+}
+
+body {
+  &.__Is-Day {
+    .Page_RedesSociais {
+      background-color: #fff;
+      border: 2px solid #efefef;
+      border-right: 0px;
+      a {
+        &:hover {
+          color: #867bd1;
+        }
+      }
+    }
+  }
 }
