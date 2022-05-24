@@ -60,7 +60,7 @@
         position: absolute;
         top: 0;
         left: 27px;
-        animation: animaBgFoto 2s infinite;
+        animation: animaBgFoto 5s infinite;
       }
       &:before {
         content: " ";
@@ -71,7 +71,7 @@
         border-radius: 100px;
         z-index: 2;
         position: absolute;
-        animation: animaBgFotoReverse 2s infinite;
+        animation: animaBgFotoReverse 5s infinite;
       }
     }
     .PageHeader_Container_Textos {
